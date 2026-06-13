@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Canadian Food Service Analysis | Surbhi Parmar Portfolio</title>
+  <meta name="description" content="Canadian Food Service Industry Analysis — COVID impact, provincial recovery and market opportunity built on Statistics Canada data.">
+  <meta name="keywords" content="Excel, Power Query, Power Pivot, DAX, Power BI, Shape Map, Data Analysis, Canada, Food Service">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Portfolio.</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/SurbhiParmar01" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/surbhiparmar/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb"></nav>
+      </div>
+      <div class="title-wrapper">
+        <h1>Canadian Food Service Industry Analysis</h1>
+        <p><p>Small provinces are outgrowing big cities. Atlantic Canada is gaining momentum. The data reveals exactly where Canada's restaurant industry is heading next.</p></p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <!-- Left column for content -->
+          <div class="col-lg-8">
+
+            <!-- Hero — Dual Dashboard -->
+<div class="dual-hero mb-4">
+  <div class="dual-hero-item">
+    <div class="dual-hero-label"><i class="bi bi-file-earmark-spreadsheet"></i> Excel Workbook</div>
+    <img src="assets/img/Advanced_Excel/Canada_FoodService_Analysis_DB.jpg"
+         class="img-fluid rounded shadow-sm"
+         alt="Excel Dashboard - Canadian Food Service Analysis">
+  </div>
+  <div class="dual-hero-item">
+    <div class="dual-hero-label"><i class="bi bi-bar-chart-steps"></i> Power BI Report</div>
+    <img src="assets/img/PowerBI/PowerBI_Dashboard.jpg"
+         class="img-fluid rounded shadow-sm"
+         alt="Power BI Dashboard - Canadian Food Service Analysis">
+  </div>
+</div>
+            
+
+            <!-- The Bottom Line -->
+<div class="bottom-line-summary">
+  <h3 class="bottom-line-title">The Bottom Line</h3>
+  <p>
+    If a restaurant chain asked me where to open their next location in Canada, 
+    I could answer with data. Using <strong>Statistics Canada's monthly food service 
+    revenue data (2018-2025)</strong>, I built a four-part analysis covering COVID recovery 
+    by province, seasonal staffing patterns, market structure shifts, and a 
+    <strong>provincial opportunity matrix</strong> that plots every province by market size 
+    and growth momentum. The short answer: <strong>Atlantic Canada is outgrowing every 
+    large market, Ontario is the dominant scale play, and Quebec and BC need 
+    consolidation before expansion.</strong> Built in Excel (Power Query, Power Pivot, DAX) for deep analytical work and Power BI for interactive geographic reporting.
+  </p>
+</div>
+
+            <div class="portfolio-description">
+
+              <h2>Project Overview</h2>
+              <p>
+                This project analyzes Canada's food service industry using official government data from Statistics Canada (Table 21-10-0019-01) covering January 2018 to December 2025. The dataset captures monthly sales across all provinces and four service categories: full-service restaurants, limited-service eating places, drinking places, and special food services.
+              </p>
+              <p>The goal was to answer four real business questions that a regional restaurant chain's operations or strategy team would genuinely care about:</p>
+              <ul>
+                <li>Which provinces recovered from COVID fastest, and which are still lagging?</li>
+                <li>When does each type of food service peak and trough through the year?</li>
+                <li>Is the Canadian market shifting from full-service to limited-service dining post-COVID?</li>
+                <li>If a restaurant chain wanted to expand, which provinces offer the best combination of sales growth and market size?</li>
+              </ul>
+
+              <!-- Key Findings at a Glance -->
+<section class="key-findings-strip">
+  <h2>Key Findings at a Glance</h2>
+  <div class="findings-grid">
+
+    <div class="finding-card">
+      <div class="finding-number">131.7</div>
+      <div class="finding-label">National Recovery Index in 2025 - Canada's food service industry is 31.7% above pre-COVID levels</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="finding-number">NB +7.01%</div>
+      <div class="finding-label">Fastest growing province in 2025 - New Brunswick leads all provinces in YoY growth, outpacing even Ontario and BC</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="finding-number">Unchanged</div>
+      <div class="finding-label">Market structure post-COVID - full-service vs limited-service share barely shifted despite widespread industry predictions of a permanent shift</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="finding-number">ON $79.9B</div>
+      <div class="finding-label">Canada's dominant food service market in 2025 - largest by sales and growing above the national average at +6.09%</div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- Deliverables Section -->
+<div class="deliverables-section mb-4">
+  <h2 class="deliverables-heading">Two Deliverables. One Analysis.</h2>
+  <p class="deliverables-intro">This project produces two professional outputs built on the same dataset and methodology - each tool chosen for what it does best.</p>
+
+  <div class="deliverables-grid">
+
+    <!-- Excel Card -->
+    <div class="deliverable-card">
+      <div class="deliverable-tool-label excel-label">
+        <i class="bi bi-file-earmark-spreadsheet"></i> Excel Workbook
+      </div>
+      
+      <p class="deliverable-purpose">Built for deep analytical work - multi-step data transformation, star schema modeling, and four layered analyses answering specific business questions.</p>
+      <ul class="deliverable-tools-list">
+        <li>Power Query: 11-step transformation pipeline</li>
+        <li>Power Pivot: star schema data model</li>
+        <li>DAX: CALCULATE, ALLEXCEPT, VAR measures</li>
+        <li>Interactive dashboard with cross-connected slicer</li>
+      </ul>
+      <a href="https://github.com/SurbhiParmar01/Canadian-Food-Service-Analysis-using-Excel-PowerBI/tree/main/AdvancedExcel"
+         target="_blank"
+         class="btn btn-portfolio w-100 mt-2">
+        <i class="bi bi-github"></i> View Excel Workbook on GitHub
+      </a>
+    </div>
+
+    <!-- Power BI Card -->
+    <div class="deliverable-card">
+      <div class="deliverable-tool-label pbi-label">
+        <i class="bi bi-bar-chart-steps"></i> Power BI Report
+      </div>
+      
+      <p class="deliverable-purpose">Built for interactive geographic reporting - a choropleth map of Canada, cross-filtering slicers, and drill-through province detail pages that Excel cannot replicate.</p>
+      <ul class="deliverable-tools-list">
+        <li>Shape Map: Canada choropleth shaded by Recovery Index</li>
+        <li>Cross-filtering: region slicer filters all visuals simultaneously</li>
+        <li>Drill-through: click any province for full detail page</li>
+        <li>DAX measures: Recovery Index, YoY Growth, Sales aggregations</li>
+      </ul>
+      <a href="https://github.com/SurbhiParmar01/Canadian-Food-Service-Analysis-using-Excel-PowerBI/releases/download/v0.1/FoodService_Adjusted.pbix"
+         target="_blank"
+         class="btn btn-portfolio w-100 mt-2">
+        <i class="bi bi-download"></i> Download Power BI Report (.pbix)
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- End Deliverables Section -->
+
+              </br>
+
+              <h2>The Data Source</h2>
+              <p>
+                Data was sourced directly from <strong>Statistics Canada, Table 21-10-0019-01 - Monthly Survey of Food Services and Drinking Places</strong>. This is seasonally adjusted monthly revenue data published by the federal government, updated regularly, and freely available as a CSV download.
+              </p>
+              <p>
+              Before importing, the STATUS column was reviewed per Statistics Canada documentation to understand data suppression flags. The suppressed values (marked x or F) were repalced as nulls in the VALUE column as removing the null rows would silently make the totals wrong.
+              </p>
+
+              </br>
+
+              <h2>Methodology</h2>
+
+              <h3>1. Power Query - Data Cleaning & Transformation</h3>
+              <section id="power-query">
+                <p class="muted">The raw CSV was imported using Power Query and cleaned through 11 documented transformation steps, all visible in the Applied Steps panel for full auditability.</p>
+
+                <details open>
+                  <summary>Transformation steps applied</summary>
+                  <div class="chart-card">
+                    <!-- Power Query Applied Steps Screenshot -->
+    <div style="margin-bottom: 1rem;">
+      <img 
+        src="assets/img/Advanced_Excel/PowerQuery_Steps.png" 
+        alt="Power Query Applied Steps Panel showing all 11 transformation steps" 
+        class="img-fluid rounded" 
+        style="border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.08);"
+      >
+      <p style="font-size: 0.78rem; color: #6c757d; margin-top: 0.4rem; font-style: italic;">
+        Power Query Applied Steps panel - every transformation is documented and auditable.
+      </p>
+    </div>
+                    <ul>
+                      <li>Filtered data to <strong>2018 onwards</strong> using Date Filters - keeping pre-COVID baseline, COVID crash, and recovery periods.</li>
+                      <li>Removed unnecessary columns: DGUID, VECTOR, SCALAR_FACTOR, UOM, STATUS, SYMBOL, TERMINATED, DECIMALS - reviewed the metadata documentation before removing to confirm each column's purpose.</li>
+                      <li>Extracted <strong>Year</strong>, <strong>Month Number</strong>, and <strong>Month-Year label</strong> columns from the REF_DATE date column using <code>Date.Year()</code>, <code>Date.Month()</code>, and <code>Date.ToText()</code> functions.</li>
+                      <li>Changed VALUE column data type to Decimal Number and left nulls in place - removing them would silently distort provincial totals.</li>
+                      <li>Added custom column called Province_Code - a short version of the full province names. Also, filtered out NWT, Yukon and Nunavut as their data was too sparse and supressed to be useful.</li>
+                      <li>Renamed columns to descriptive names: Sales_Thousands, Service_Type, Province_Code.</li>
+                      <li>Loaded as <strong>connection only -- Add to Data Model</strong> - keeping the workbook clean while making data available to Power Pivot.</li>
+                    </ul>
+                  </div>
+                </details>
+              </section>
+
+              </br>
+
+              <h3>2. Province Lookup Table - Data Enrichment</h3>
+              <section id="lookup-table">
+                <p class="muted">A Province_Lookup table was manually created and added to the Data Model, enriching the raw data with Region and Population_Group classifications not present in the original dataset.</p>
+                <div class="chart-card">
+                  <p class="chart-note">The lookup table maps each province code to its full name, region (West, Central, Prairies, Atlantic), and population group (Large, Medium, Small). This enrichment enabled the Region slicer on the dashboard and the XLOOKUP demonstrations on the Province Summary sheet.</p>
+                  
+                </div>
+              </section>
+
+              </br>
+
+              <h3>3. Power Pivot Data Model - Star Schema</h3>
+              <section id="data-model">
+                <p class="muted">The two tables were connected in Power Pivot using a many-to-one relationship through Province_Code, forming a star schema - the standard structure used in professional BI tools including Power BI.</p>
+                <div class="chart-card">
+                  <p class="chart-note"><strong>FoodService_Adjusted</strong> (fact table - thousands of rows of monthly sales data) connected to <strong>Province_Lookup</strong> (dimension table - 11 province records) via Province_Code. This relationship allows PivotTables to filter sales data by Region from the lookup table without any additional formulas.</p>
+                </div>
+              </section>
+
+              </br>
+
+              <h3>4. DAX Measures</h3>
+              <section id="dax-measures">
+                <p class="muted">Four DAX measures were created in Power Pivot to enable dynamic, context-aware calculations across all PivotTables.</p>
+
+                <div class="chart-list">
+
+                  <div class="chart-card">
+                    <h4>Total Sales</h4>
+                    <p class="chart-note">Sums Sales_Thousands filtered to the "Total, food services and drinking places" Service_Type category and multiplies by 1,000 to convert to actual dollars - eliminating double-counting from individual subcategory rows.</p>
+                  </div>
+
+                  <div class="chart-card">
+                    <h4>YoY Growth %</h4>
+                    <p class="chart-note">Uses <strong>CALCULATE</strong> with <strong>SAMEPERIODLASTYEAR</strong> to shift the date context back 12 months, then calculates the percentage change. <strong>DIVIDE</strong> is used instead of standard division to return blank (not an error) when the denominator is zero.</p>
+                  </div>
+
+                  <div class="chart-card">
+                    <h4>vs 2019 Baseline %</h4>
+                    <p class="chart-note">Uses a <strong>VAR</strong> variable to store the 2019 baseline, calculated with <strong>ALLEXCEPT</strong> to preserve the province filter while replacing the year filter with 2019. This ensures every province is compared to its own 2019 performance, not the national total.</p>
+                  </div>
+
+                  <div class="chart-card">
+                    <h4>Recovery Index</h4>
+                    <p class="chart-note">Same structure as vs 2019 Baseline, but returns a score (100 = fully recovered, below 100 = still lagging, above 100 = exceeded pre-COVID levels) rather than a percentage change. More intuitive for dashboard display.</p>
+                  </div>
+
+                </div>
+              </section>
+
+              </br>
+
+              <h3>5. XLOOKUP - Basic and Multi-Condition</h3>
+<section id="xlookup">
+  <p class="muted">A Province Summary sheet demonstrates three levels of formula complexity - from basic metadata lookup to multi-condition composite keys, formula validation, and analyst-defined classification logic.</p>
+
+  <!-- Basic XLOOKUP -->
+  <div class="chart-card">
+    <h4><b>Basic XLOOKUP - Province Metadata</b></h4>
+    <p class="chart-note">Pulls Region and Population_Group from the Province_Lookup table using Province_Code as the lookup key:</p>
+    <code>=XLOOKUP(A2, Province_Lookup[Province_Code], Province_Lookup[Region], "Not Found")</code><br>
+    <code>=XLOOKUP(A2, Province_Lookup[Province_Code], Province_Lookup[Population_Group], "Not Found")</code>
+    <p class="chart-note" style="margin-top:0.75rem;"><em>Why this approach:</em> structured table references (<code>Province_Lookup[Province_Code]</code>) are self-documenting and row-safe - they don't break when rows are inserted or deleted, unlike fixed cell references like <code>$B$2:$B$12</code>.</p>
+  </div>
+
+  <!-- Multi-condition XLOOKUP -->
+  <div class="chart-card">
+    <h4><b>Multi-condition XLOOKUP - Sales by Province, Year, and Service Type</b></h4>
+    <p class="chart-note">Combines three columns into a composite lookup key using &amp; concatenation - retrieving total food service sales for a specific province and year without helper columns:</p>
+    <code>=XLOOKUP(A2&amp;"2024"&amp;"Total, food services and drinking places", FoodService_Adjusted[Province_Code]&amp;FoodService_Adjusted[Year]&amp;FoodService_Adjusted[Service_Type], FoodService_Adjusted[Sales_Thousands], "No data")*1000</code>
+    <p class="chart-note" style="margin-top:0.75rem;"><em>Why this approach:</em> multi-condition XLOOKUP eliminates the need for helper columns or INDEX-MATCH arrays. The composite key approach (<code>A&amp;B&amp;C</code>) works because concatenating three unique identifiers creates a value that exists in only one row - no duplicates, no ambiguity.</p>
+  </div>
+
+  <!-- Formula validation -->
+  <div class="chart-card">
+    <h4><b>Formula Validation - XLOOKUP Corrected to SUMIFS</b></h4>
+    <p class="chart-note">Formula correction identified during validation: the initial multi-condition XLOOKUP returned only the first matching row. Since Statistics Canada stores data as monthly values, XLOOKUP was returning a single month's figure rather than the full annual total - a silent error that produced plausible-looking but incorrect numbers.</p>
+    <p class="chart-note" style="margin-top:0.5rem;">The error was caught by cross-checking XLOOKUP outputs against DAX measure totals from the Power Pivot data model. SUMIFS was used as the correction, aggregating all 12 monthly values per province per year:</p>
+    <code>=SUMIFS(FoodService_Adjusted[Sales_Thousands], FoodService_Adjusted[GEO], A2, FoodService_Adjusted[Year], 2025, FoodService_Adjusted[Service_Type], "Total, food services and drinking places") * 1000</code>
+    <p class="chart-note" style="margin-top:0.75rem;"><em>Why this matters:</em> a formula that runs without an error is not the same as a formula that is correct. Validating outputs against independent calculations - especially when the numbers look reasonable - is what separates rigorous analysis from analysis that just looks right.</p>
+  </div>
+
+  <!-- Nested IF -->
+  <div class="chart-card">
+    <h4><b>Nested IF — Market Tier Classification</h4></b>
+    <p class="chart-note">After calculating the vs 2019 Baseline % for each province, a nested IF formula classified each province into a growth tier. Thresholds were set based on the actual data distribution rather than generic defaults:</p>
+    <code>=IF(G2&gt;0.35,"Exceptional Growth",IF(G2&gt;0.25,"Strong Growth","Moderate Growth"))</code>
+    <p class="chart-note" style="margin-top:0.75rem;">The thresholds (35% and 25%) reflect the actual range of provincial growth rates vs 2019 (20%-46% by 2024).</p>
+    <p class="chart-note" style="margin-top:0.75rem;"><strong>Conditional Formatting</strong> was applied to make the classification visually immediate:</p>
+    <ul>
+      <li><strong style="color:#1a7a1a;">Exceptional Growth</strong> - green fill, above 35% vs 2019 (PEI at 38.79%)</li>
+      <li><strong style="color:#4a7a1a;">Strong Growth</strong> - light green fill, between 25-35% (BC,SK,NS,NB,NL)</li>
+      <li><strong style="color:#7a7a00;">Moderate Growth</strong> - yellow fill, below 25% (AB, MB, ON, QC)</li>
+    </ul>
+    <p class="chart-note" style="margin-top:0.5rem;"><em>Why this matters:</em> conditional formatting transforms a column of text labels into a scannable visual signal - anyone can see which provinces are outperforming without reading every cell.</p>
+  </div>
+
+</section>
+
+              <!-- Power BI Report Walkthrough -->
+<div class="pbi-walkthrough-section">
+
+  <h2>Power BI Report</h2>
+  <p class="pbi-walkthrough-intro">
+    The Power BI report takes the same dataset and methodology and rebuilds the 
+    output layer for interactive exploration. Two pages - a national overview with 
+    geographic filtering, and a province-level detail page accessible via drill-through.
+  </p>
+
+  <!-- Page 1 -->
+  <h3 class="pbi-page-heading">Page 1 - Provincial Opportunity Map</h3>
+  <p>Three KPI cards across the top show the national Recovery Index, highest YoY 
+  growth, and lowest Recovery Index at a glance. A region slicer 
+  filters all visuals simultaneously - clicking Atlantic instantly narrows the map 
+  and bar chart to those four provinces only.</p>
+
+  <div class="chart-image-container">
+    <img src="assets/img/PowerBI/PowerBI_Dashboard.jpg"
+         class="chart-image"
+         alt="Power BI Page 1 — full view">
+    <p class="image-caption">Page 1 - Provincial Opportunity Map. Region slicer, Canada choropleth shaded by Recovery Index, and YoY Growth % bar chart sorted descending.</p>
+  </div>
+
+  <div class="chart-image-container">
+    <img src="assets/img/PowerBI/Atlantic_Filter.jpg"
+         class="chart-image"
+         alt="Power BI — Atlantic filter active">
+    <p class="image-caption">Cross-filtering in action - Atlantic selected. Map zooms to Atlantic provinces, bar chart filters to NB, NS, NL, PE only.</p>
+  </div>
+
+  <!-- Map + Bar Chart together -->
+<h3 class="pbi-page-heading">Choropleth Map + Bar Chart - Two Visuals, One Story</h3>
+<p>The left and right visuals on Page 1 are designed to answer two different questions 
+simultaneously. The choropleth map answers <strong>where</strong> - provinces shaded on a 
+light-to-dark blue gradient by Recovery Index, so geographic patterns are visible at a 
+glance. Darker shading means stronger recovery relative to the 2019 baseline. The bar 
+chart answers <strong>by how much</strong> - every province ranked by YoY Growth % from 
+highest to lowest, with exact values labeled on each bar.</p>
+
+<p>Neither visual tells the complete story alone. The map shows that Atlantic provinces 
+are clustering at a similar recovery level but cannot show their exact growth ranking. 
+The bar chart shows New Brunswick and Nova Scotia tied at 7.0% but cannot show their 
+geographic relationship to each other. Together, they make the regional pattern 
+immediately readable - Atlantic Canada is both geographically concentrated and 
+consistently outgrowing every large market.</p>
+
+<div class="chart-image-container">
+  <img src="assets/img/PowerBI/Map_BarChart.jpg"
+       class="chart-image"
+       alt="Power BI - choropleth map and bar chart side by side">
+  <p class="image-caption">Map (left) shaded by Recovery Index - darker means stronger recovery vs 2019. Bar chart (right) ranked by YoY Growth % - New Brunswick and Nova Scotia lead at 7.0%, British Columbia lowest at 5.0%.</p>
+</div>
+
+<p>Clicking any province on the map highlights its bar in the chart. Clicking any bar 
+highlights that province on the map. Every visual cross-filters every other visual 
+simultaneously - the core interactive capability that separates this Power BI report 
+from the static Excel dashboard.</p>
+
+  <!-- Page 2 -->
+  <h3 class="pbi-page-heading">Page 2 - Province Detail (Drill-Through)</h3>
+  <p>Right-clicking any province on Page 1 and selecting Drill Through opens a 
+  dedicated detail page filtered to that province. The page shows the annual sales 
+  trend from 2018 to 2025 and a service type breakdown for 2025 - giving full 
+  context behind the summary numbers on Page 1.</p>
+
+  <div class="chart-image-container">
+    <img src="assets/img/PowerBI/Ontario_Drillthrough.jpg"
+         class="chart-image"
+         alt="Power BI drill-through - Ontario">
+    <p class="image-caption">Ontario drill-through - largest market at $79.9B, steady recovery trend visible from 2020 trough to 2025.</p>
+  </div>
+
+  <div class="chart-image-container">
+    <img src="assets/img/PowerBI/NB_Drillthrough.jpg"
+         class="chart-image"
+         alt="Power BI drill-through - New Brunswick">
+    <p class="image-caption">New Brunswick drill-through - fastest growing province at +7.01% YoY, limited-service eating places driving growth.</p>
+  </div>
+
+</div>
+<!-- End Power BI Report Walkthrough -->
+
+              <h2>The Four Analyses - Excel</h2>
+
+              <!-- Analysis 1 -->
+              <section id="analysis-1" class="viz-section">
+                <h3>Analysis 1 - COVID Crash &amp; Provincial Recovery</h3>
+                <p class="muted"><em>Business question: Which provinces recovered from COVID fastest, and which are still lagging?</em></p>
+
+                <div class="chart-image-container">
+                  <img src="assets/img/Advanced_Excel/Analysis1_HeatMap.jpg" alt="Provincial Recovery Index Heatmap" class="chart-image">
+                  <p class="image-caption">Figure: Recovery Index Heatmap by Province (2018-2025). Red = below pre-COVID levels. Green = exceeded pre-COVID levels.</p>
+                </div>
+
+                <div class="chart-card">
+                  <p class="chart-note">A PivotTable from the Data Model shows Recovery Index scores for each province by year, formatted as a red-yellow-green color scale with 100 as the midpoint. The 2019 column shows exactly 100.0 for every province, confirming the baseline calculation is correct.</p>
+                  <ul>
+                    <li><strong>2020 crash</strong> - every province dropped well below 100, with Ontario (69.0) and Quebec (68.6) hit hardest due to urban density and stricter lockdown enforcement.</li>
+                    <li><strong>2022 recovery</strong> - most provinces crossed back above 100, exceeding pre-COVID levels as restrictions lifted and pent-up dining demand surged.</li>
+                    <li><strong>2025 leaders</strong> - PEI (145.9) and Nova Scotia (137.5) show the strongest recovery indices, driven by domestic tourism growth and interprovincial migration to Atlantic Canada.</li>
+                  </ul>
+                </div>
+              </section>
+
+              </br>
+
+              <!-- Analysis 2 -->
+              <section id="analysis-2" class="viz-section">
+                <h3>Analysis 2 - Seasonal Patterns by Service Type</h3>
+                <p class="muted"><em>Business question: When does each type of food service peak and trough through the year?</em></p>
+
+                <div class="chart-image-container">
+                  <img src="assets/img/Advanced_Excel/Analysis2_Seasonal.jpg" alt="Seasonal Sales Patterns Line Chart" class="chart-image">
+                  <p class="image-caption">Figure: Monthly average sales by service type - 2023 (first fully normal post-COVID year).</p>
+                </div>
+
+                <div class="chart-card">
+                  <p class="chart-note">A line chart using 2023 data - the first fully normal post-COVID year — shows true seasonal patterns unaffected by lockdown distortions.</p>
+                  <ul>
+                    <li><strong>Full-service restaurants</strong> - pronounced summer peak (July-August), clear winter trough (January-March). Classic patio season pattern confirmed by data.</li>
+                    <li><strong>Limited-service eating places</strong> - remarkably flat across all 12 months. Fast food demand is largely season-independent, requiring consistent year-round staffing rather than seasonal scaling.</li>
+                    <li><strong>Drinking places</strong> - slight December uptick from holiday celebrations, otherwise stable.</li>
+                    <li><strong>Special food services</strong> - September spike driven by corporate catering resuming after summer and back-to-school event season.</li>
+                  </ul>
+                  <p class="chart-note"><em>Operational implication:</em> full-service operators should plan for 15-20% higher staffing and inventory in July-August versus January-February. Limited-service operators can maintain flat staffing models year-round.</p>
+                </div>
+              </section>
+
+              </br>
+
+              <!-- Analysis 3 -->
+              <section id="analysis-3" class="viz-section">
+                <h3>Analysis 3 - Full-Service vs Limited-Service Market Share Shift</h3>
+                <p class="muted"><em>Business question: Is the Canadian market shifting from full-service to limited-service dining post-COVID?</em></p>
+
+                <div class="chart-image-container">
+                  <img src="assets/img/Advanced_Excel/Analysis3_MarketShare.jpg" alt="Market Share Stacked Bar Chart" class="chart-image">
+                  <p class="image-caption">Figure: 100% stacked bar showing each service type's share of total sales by year (2018–2025).</p>
+                </div>
+
+                <div class="chart-card">
+                  <p class="chart-note">Despite widespread industry predictions of a permanent shift toward fast food and delivery post-COVID, the data tells a different story.</p>
+                  <ul>
+                    <li>Full-service restaurants maintained their share within 2-3 percentage points of pre-COVID levels across all years.</li>
+                    <li>Limited-service share showed only marginal gains - not the structural shift many forecasters predicted.</li>
+                    <li>The market composition proved remarkably stable despite the shock of COVID and subsequent inflation pressures.</li>
+                  </ul>
+                  <p class="chart-note"><em>Strategic implication:</em> Canadian dining habits are structurally resilient. A restaurant chain evaluating whether to pivot from full-service to fast-casual based on post-COVID trends would be overreacting to a temporary signal rather than a permanent structural shift.</p>
+                </div>
+              </section>
+
+              </br>
+
+              <!-- Analysis 4 -->
+              <section id="analysis-4" class="viz-section">
+                <h3>Analysis 4 - Provincial Market Opportunity Matrix</h3>
+                <p class="muted"><em>Business question: Which provinces offer the best combination of market size and growth momentum for expansion?</em></p>
+
+                <div class="chart-image-container">
+                  <img src="assets/img/Advanced_Excel/Analysis4_BubbleMatrix.png" alt="Provincial Market Opportunity Bubble Chart" class="chart-image">
+                  <p class="image-caption">Figure: Bubble chart - X axis = 2025 total sales (market size), Y axis = YoY growth % (momentum), bubble size = Recovery Index 2025.</p>
+                </div>
+
+                <div class="chart-card">
+                  <p class="chart-note">A bubble chart plots all 10 provinces across three dimensions simultaneously. Two reference lines (set at average market size and average growth) divide the chart into four strategic quadrants.</p>
+                 <ul>
+  <li><strong>Expand Here (top right)</strong> - Ontario ($79.9B, +6.09%) 
+  stands alone as Canada's dominant food service market - large scale 
+  combined with above-average growth makes it the clearest priority for 
+  national chain expansion.</li>
+
+  <li><strong>Emerging Markets (top left)</strong> - New Brunswick (+7.01%) 
+  and Nova Scotia (+6.95%) lead all provinces in YoY growth despite their 
+  smaller market size. Saskatchewan (+6.64%) and Newfoundland (+6.13%) also 
+  sit above the national average - four Atlantic and Prairie provinces 
+  outgrowing the national trend in 2025.</li>
+
+  <li><strong>Protect Market Share (bottom right)</strong> - Quebec ($39.1B, 
+  +5.20%) and British Columbia ($34.9B, +4.99%) are large markets growing 
+  below the national average of 5.94%. Both warrant operational efficiency 
+  focus over aggressive new location investment.</li>
+
+  <li><strong>Watch Carefully (bottom left)</strong> - Manitoba (+5.35%) 
+  and PEI (+5.14%) are the smallest markets with the lowest growth rates. 
+  Limited upside for new entrants - existing operators should focus on 
+  retention.</li>
+</ul>
+                  <p class="chart-note"><em>Notable finding:</em> Four smaller provinces 
+- New Brunswick, Nova Scotia, Saskatchewan, and Newfoundland - are all 
+growing faster than Ontario and BC in 2025. This counterintuitive pattern 
+suggests regional markets are gaining momentum while Canada's largest 
+cities face saturation and cost pressures. For a regional chain evaluating 
+first-mover opportunities, Atlantic Canada and Saskatchewan represent 
+the most compelling expansion targets before competition intensifies.</p>
+                </div>
+              </section>
+
+              </br>
+
+              <!-- Analyst's Perspective -->
+              <section id="analyst-perspective" class="deep-insights">
+                <h2>Analyst's Perspective</h2>
+                <p class="lead">This section connects the data findings to real operational experience - something the numbers alone cannot provide.</p>
+
+                <div class="insight-block">
+                  <h3>1. The Recovery Story Is More Nuanced Than the Headlines Suggest</h3>
+                  <h4>What the data shows</h4>
+                  <p>The national Recovery Index of 131.7 in 2025 suggests the industry is thriving, which is, 31.7% above pre-COVID levels. But this figure includes significant inflation in menu prices.</p>
+                  <h4>The operational reality</h4>
+                  <p>Having worked in food service operations in Canada during the recovery period, the gap between revenue recovery and volume recovery was visible firsthand. A restaurant doing $1.3M in 2025 versus $1M in 2019 isn't necessarily serving 30% more customers - it may be charging 25% more per cover. The nominal recovery overstates the operational rebound. Operators expanding based on revenue recovery metrics alone risk overestimating true market demand.</p>
+                  <h4>What this means for analysts</h4>
+                  <p>Always ask whether revenue growth reflects volume growth or price growth. In food service post-2022, the answer is often "mostly price." A more complete analysis would layer in Statistics Canada's restaurant price index to deflate these numbers - a natural next step for this project.</p>
+                  <p><span class="metric">Metric to track:</span> Real (inflation-adjusted) sales growth by province, comparing nominal recovery index against CPI for food purchased from restaurants.</p>
+                </div>
+
+                <div class="insight-block">
+                  <h3>2. PEI's 145.9 Recovery Index Needs Context Before Acting On It</h3>
+                  <h4>What the data shows</h4>
+                  <p>PEI has the highest Recovery Index of any province at 145.9 - nearly 50% above pre-COVID levels. On the surface, this looks like the best expansion opportunity in Canada.</p>
+                  <h4>The operational reality</h4>
+                  <p>PEI's food service revenue is heavily tourism-driven. Post-COVID domestic tourism surged as Canadians who would have travelled internationally instead explored their own country. PEI was a primary beneficiary. The 145.9 index does not represent organic local market growth - it represents a tourism dividend that may not be permanent as international travel normalizes. A restaurant chain entering PEI based on this metric alone would be misreading the data.</p>
+                  <h4>The analytical lesson</h4>
+                  <p>Understanding why a number is high is as important as knowing that it is high. Domain knowledge - in this case, knowing that PEI's economy is structurally tourism-dependent - prevents analytical errors that pure number-crunching cannot catch.</p>
+                  <p><span class="metric">Metric to track:</span> PEI tourism arrival numbers alongside food service revenue - if they correlate strongly, the Recovery Index is a tourism indicator, not a market strength indicator.</p>
+                </div>
+
+                <div class="insight-block">
+                  <h3>3. Atlantic Canada Is Quietly Outperforming the Big Markets</h3>
+                  <h4>What the data shows</h4>
+                  <p>New Brunswick (+7.01%), Nova Scotia (+6.95%), and Newfoundland 
+                  (+6.13%) are all growing faster than Ontario (+6.09%) and BC (+4.99%) 
+                  in 2025 - despite being a fraction of their market size.</p>
+                  <h4>The operational reality</h4>
+                  <p>Atlantic Canada has experienced significant interprovincial migration 
+                  post-COVID as remote workers relocated from expensive urban centres like 
+                  Toronto and Vancouver. More residents means more food service demand - 
+                  but the restaurant supply hasn't caught up yet. This supply-demand gap 
+                  is exactly the window a first-mover regional chain should act on before 
+                  the market normalises.</p>
+                  <h4>What this means for analysts</h4>
+                  <p>Growth rate alone doesn't tell you whether a market is worth entering 
+                  - you need to understand why it's growing. Atlantic Canada's growth is 
+                  structural (population shift) rather than cyclical (post-COVID rebound), 
+                  which makes it more durable. That distinction only becomes visible when 
+                  you combine the data with domain knowledge of what was happening in those 
+                  regions.</p>
+                  <p><span class="metric">Metric to track:</span> Atlantic Canada 
+                  interprovincial migration data from Statistics Canada alongside food 
+                  service revenue growth - if they correlate, the growth is population-driven 
+                  and likely to continue.</p>
+</div>
+
+              </section>
+
+            </div>
+
+          </div> <!-- End Left Column -->
+
+          <!-- Right column for summary card -->
+          <div class="col-lg-4">
+            <div class="sticky-top-custom">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Summary</b></h5>
+
+                  <p><strong>TOOLS</strong><br>
+                    <strong style="color: #000000d8;">Excel</strong> - Power Query, Power Pivot, DAX, XLOOKUP, PivotTables, Conditional Formatting<br><br>
+                    <strong style="color: #000000d8;">Power BI</strong> - Shape Map, DAX Measures, Cross-filtering Slicers, Drill-Through Pages, Data Modeling</p>
+
+                  <p><strong>DATA SOURCE</strong><br>
+                  Statistics Canada, Table 21-10-0019-01 - Monthly Survey of Food Services and Drinking Places (2018–2025)</p>
+
+                  <p><strong>OBJECTIVE</strong><br>
+                  Analyze Canada's food service industry recovery from COVID, identify seasonal patterns, assess market structure shifts, and build a provincial market opportunity framework for strategic decision-making.</p>
+
+                  <p><strong>KEY SKILLS DEMONSTRATED</strong><br>
+                  Power Query (multi-step transformation pipeline), Power Pivot (star schema data model), DAX measures (CALCULATE, ALLEXCEPT, SAMEPERIODLASTYEAR, VAR), XLOOKUP (basic and multi-condition composite key), Structured table references, Recovery Index design, Quadrant analysis framework, Interactive dashboard with cross-connected slicer, Data enrichment via lookup table</p>
+
+                  <p><strong>KEY FINDINGS</strong></p>
+<ul style="padding-left: 1rem; margin-top: 0.25rem;">
+  <li>National Recovery Index <strong>131.7</strong> in 2025</li>
+  <li>PEI leads all provinces at <strong>145.9</strong> Recovery Index</li>
+  <li>Market structure <strong>unchanged</strong> post-COVID</li>
+  <li>New Brunswick leads YoY growth at <strong>+7.01%</strong></li>
+  <li>Ontario largest market at <strong>$79.9B</strong> in 2025</li>
+  <li>Atlantic Canada outgrowing all large markets in 2025</li>
+</ul>
+
+                 <a href="https://github.com/SurbhiParmar01/Canadian-Food-Service-Analysis-using-Excel-PowerBI/tree/main/AdvancedExcel" 
+   class="btn btn-portfolio w-100 mt-2" target="_blank">
+  <i class="bi bi-github"></i> Excel Workbook on GitHub
+</a>
+<a href="https://github.com/SurbhiParmar01/Canadian-Food-Service-Analysis-using-Excel-PowerBI/releases/download/v0.1/FoodService_Adjusted.pbix" 
+   class="btn btn-portfolio w-100 mt-2" target="_blank">
+  <i class="bi bi-download"></i> Power BI Report (.pbix)
+</a>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End Right Column -->
+
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+
+    </section><!-- End Portfolio Details Section -->
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center">
+      <h2>Explore the Project</h2>
+<p>Download the Excel workbook and Power BI report - both built on the same Statistics Canada dataset, each demonstrating a different dimension of professional data work.</p>
+<div class="cta-buttons mt-3">
+  <a href="https://github.com/SurbhiParmar01/Canadian-Food-Service-Analysis-using-Excel-PowerBI/tree/main/AdvancedExcel" target="_blank" class="btn btn-portfolio">
+    <i class="bi bi-github"></i> Excel Workbook
+  </a>
+  <a href="https://github.com/SurbhiParmar01/Canadian-Food-Service-Analysis-using-Excel-PowerBI/releases/download/v0.1/FoodService_Adjusted.pbix" target="_blank" class="btn btn-portfolio">
+    <i class="bi bi-download"></i> Power BI Report
+  </a>
+</div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/SurbhiParmar01" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/surbhiparmar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
